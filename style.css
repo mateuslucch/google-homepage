@@ -1,11 +1,12 @@
 body {
     font-family:"Arial", sans-serif;    
-    font-size: small;
+    font-size: small;    
 }
 
 /*links do cabeçalho*/
-header {    
+.header {    
     font-size: 13px;   
+    overflow: hidden;
 }
 
 ul {
@@ -43,29 +44,30 @@ li a {                     /*edita propriedades dos hiperlinks*/
 
 /*área de busca e imagem*/
 
-.searcharea{
-  margin: auto;  
+.searcharea{ 
+  margin: auto;
+  width: 100%;  
+  position: relative;  
   
-  padding: 200px;
 }
-
-.searcharea img {
-    
+img{
+    padding-top: 150px;
+}
+img ,.sbox ,.buttons{ /* "," individualiza as classes*/   
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transform: translate(50%);
+    text-align: -webkit-center;
 }
 
-.searcharea .sbox {
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(50%);
+.sbox {
+    padding-top: 40px;
+    
+}
+.box{
+    font-size:13pt;    
+    width:400px;}
 
-}
-.buttons{   
-    transform: translate(25%);
-}
 .bstyle { /*estilo botões de busca*/
     margin: 11px 4px;    
     padding: 0 16px; /*paddin: top/bottom left/right;, mesmo para margin*/
@@ -80,22 +82,42 @@ li a {                     /*edita propriedades dos hiperlinks*/
 }
 
 /*rodape*/
-footer {
+.footer {
+    color: #5f6368;
     position: absolute;
     bottom: 0;
-    width: 100%;
-     
-    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    width: 100%;    
     background-color: #f2f2f2;    
-    border: 1px solid #f2f2f2;/*border: width type color;*/
+    padding-left: 24px;
+    margin: auto;
+    
 }
 
-footer .area{
+.region{
     color: #5f6368;
+    width: auto;
+    font-size: 15px;    
+    padding: 10px 0;
 }
-footer .ind .area{    
-    font-size: 14px;  
-    line-height: 27px;
-    height: 36px;
-   
+
+.footer a{    
+    text-decoration: none; /*remove sublinhado clássico de link*/
+    color: #5f6368;    
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 13px; 
+    
+}
+
+.linkleft{ 
+ padding: 10px 0;
+  
+ display: inline-block;
+ width: auto;
+}
+
+.linkright{    
+    float: right;    
+    
+    padding: 10px 50px 10px 0;
 }
