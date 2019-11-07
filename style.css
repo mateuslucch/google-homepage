@@ -1,0 +1,101 @@
+body {
+    font-family:"Arial", sans-serif;    
+    font-size: small;
+}
+
+/*links do cabeçalho*/
+header {    
+    font-size: 13px;   
+}
+
+ul {
+    list-style-type: none; /*remove o estilo da lista(remove pontos)*/    
+    padding: 0 30px;
+    float: right; /*mantem os elementos da lista na direita da tela*/    
+    line-height: 30px; /*altura bloco*/
+    
+}
+
+li {
+    display: inline-block; /*exibe elementos da lista na mesma linha*/
+    padding: 0px 10px; /*altera distancia entre links*/    
+    line-height: 28px;
+}
+
+li a {                     /*edita propriedades dos hiperlinks*/
+    text-decoration: none; /*remove sublinhado clássico de link*/
+    color:rgb(34,34,34); /*troca cor azul(padrão) por outra*/    
+    display: inline-block; /*permite dar um tamanho ao elemento*/
+    
+}
+
+.loginb { /*propriedades apenas do link "Fazer Login"*/
+    
+    font-weight: bold;
+    background: #4387fd; /*cor fundo*/    
+    color: white; /*cor letra*/    
+    cursor: default; /*cursor nao altera*/
+    border: 1px solid #4387fd;
+    border-radius: 2px;
+    padding: 0 12px;
+    
+ }
+
+/*área de busca e imagem*/
+
+.searcharea{
+  margin: auto;  
+  
+  padding: 200px;
+}
+
+.searcharea img {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(50%);
+}
+
+.searcharea .sbox {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(50%);
+
+}
+.buttons{   
+    transform: translate(25%);
+}
+.bstyle { /*estilo botões de busca*/
+    margin: 11px 4px;    
+    padding: 0 16px; /*paddin: top/bottom left/right;, mesmo para margin*/
+    border: 1px solid #f2f2f2;/*border: width type color;*/
+    border-radius: 4px; /*curva cantos borda*/
+    line-height: 27px;
+    height: 36px;    
+    background-color: #f2f2f2;    
+    font-size: 14px;
+    color: #5f6368;
+    
+}
+
+/*rodape*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+     
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;    
+    border: 1px solid #f2f2f2;/*border: width type color;*/
+}
+
+footer .area{
+    color: #5f6368;
+}
+footer .ind .area{    
+    font-size: 14px;  
+    line-height: 27px;
+    height: 36px;
+   
+}
