@@ -1,10 +1,17 @@
+html{
+    height: 100%;
+    display: block;
+}
 body {
     font-family:"Arial", sans-serif;    
-    font-size: small;    
+    font-size: small;   
+    margin: 0; 
+    padding: 0;
+    height: 100%;
 }
 
 /*links do cabeçalho*/
-.header {    
+header {    
     font-size: 13px;   
     overflow: hidden;
 }
@@ -13,25 +20,31 @@ ul {
     list-style-type: none; /*remove o estilo da lista(remove pontos)*/    
     padding: 0 30px;
     float: right; /*mantem os elementos da lista na direita da tela*/    
-    line-height: 30px; /*altura bloco*/
-    
+        
 }
 
 li {
     display: inline-block; /*exibe elementos da lista na mesma linha*/
-    padding: 0px 10px; /*altera distancia entre links*/    
-    line-height: 28px;
+    padding: 0px 10px; /*altera distancia entre links*/
+    line-height: 26px;
+    
 }
 
 li a {                     /*edita propriedades dos hiperlinks*/
     text-decoration: none; /*remove sublinhado clássico de link*/
     color:rgb(34,34,34); /*troca cor azul(padrão) por outra*/    
     display: inline-block; /*permite dar um tamanho ao elemento*/
+    margin: auto;
+    overflow:auto;
     
 }
-
-.loginb { /*propriedades apenas do link "Fazer Login"*/
-    
+.appimg{
+    width: 26px;
+    height: 26px;
+    filter: brightness(50%) invert(0); /*modifica propriedades da imagem*/  
+    vertical-align: middle;
+}
+.loginb { /*propriedades apenas do link "Fazer Login"*/    
     font-weight: bold;
     background: #4387fd; /*cor fundo*/    
     color: white; /*cor letra*/    
@@ -42,7 +55,7 @@ li a {                     /*edita propriedades dos hiperlinks*/
     
  }
 
-/*área de busca e imagem*/
+/*área de busca e logo*/
 
 .searcharea{ 
   margin: auto;
@@ -50,24 +63,53 @@ li a {                     /*edita propriedades dos hiperlinks*/
   position: relative;  
   
 }
-img{
+.logo{
     padding-top: 150px;
+    
 }
-img ,.sbox ,.buttons{ /* "," individualiza as classes*/   
+.logo ,.searcharea ,.buttons{ /* "," individualiza as classes*/   
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: -webkit-center;
-}
-
-.sbox {
-    padding-top: 40px;
+    text-align: center;
     
 }
-.box{
-    font-size:13pt;    
-    width:400px;}
 
+.searchelements {
+    width: 600px;
+    margin: 30px auto auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 26px;
+    height: 40px;
+    
+}
+.sbox {
+    font-size:13pt;    
+    width:450px;
+    margin: auto;    
+    padding: 6px 6px;
+    border: none; /*remove a borda padrão da caixa de texto*/
+}
+.keyb {
+        
+    vertical-align: middle;
+    padding: 6px 0 6px 8px;
+}
+.micro {
+    height: 26px;
+    width: 26px;    
+    vertical-align: middle;
+    padding: 6px 0 6px 12px;
+}
+.magnif {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;    
+    padding: 6px 0 6px 4px;
+}
+.buttons{
+    padding-top: 16px;
+}
 .bstyle { /*estilo botões de busca*/
     margin: 11px 4px;    
     padding: 0 16px; /*paddin: top/bottom left/right;, mesmo para margin*/
@@ -82,13 +124,13 @@ img ,.sbox ,.buttons{ /* "," individualiza as classes*/
 }
 
 /*rodape*/
-.footer {
+footer {
     color: #5f6368;
     position: absolute;
     bottom: 0;
     width: 100%;    
     background-color: #f2f2f2;    
-    padding-left: 24px;
+    
     margin: auto;
     
 }
@@ -97,10 +139,10 @@ img ,.sbox ,.buttons{ /* "," individualiza as classes*/
     color: #5f6368;
     width: auto;
     font-size: 15px;    
-    padding: 10px 0;
+    padding: 12px 0 12px 24px;
 }
 
-.footer a{    
+footer a{  /*altera só links dentro do footer*/ 
     text-decoration: none; /*remove sublinhado clássico de link*/
     color: #5f6368;    
     padding-right: 10px;
@@ -110,14 +152,13 @@ img ,.sbox ,.buttons{ /* "," individualiza as classes*/
 }
 
 .linkleft{ 
- padding: 10px 0;
-  
+ padding: 12px 0 12px 24px; 
  display: inline-block;
  width: auto;
 }
 
 .linkright{    
     float: right;    
-    
     padding: 10px 50px 10px 0;
+    
 }
